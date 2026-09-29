@@ -1,0 +1,3 @@
+record_id,country_code,region_code,source_id,source_date,fetched_at,crs,completeness,name,area_m2,lon,lat,position_m
+shared-001,DE,NW,fixture-002,2026-09-03,2026-09-04T08:00:00Z,EPSG:4326,complete,CSV German parcel,2500,7.1,51.1,8
+shared-001,NL,GE,fixture-002,2026-09-03,2026-09-04T08:00:00Z,EPSG:4326,complete,CSV Dutch parcel,3100,6.1,52.0,12

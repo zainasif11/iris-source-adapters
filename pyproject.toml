@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iris-source-adapters"
+version = "0.1.0"
+description = "Country-aware source adapters and validated IRIS staging records"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+postgres = ["psycopg[binary]>=3.2,<4"]
+
+[project.scripts]
+iris-ingest = "iris_adapters.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
